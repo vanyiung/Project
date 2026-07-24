@@ -1,0 +1,42 @@
+# Build and dependency outputs
+target/
+node_modules/
+dist/
+build/
+
+# Local IDE and OS files
+.idea/
+*.iml
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+*.bak
+
+# Secrets and local-only configuration
+.env
+.env.*
+!.env.example
+application-local.yaml
+application-local.yml
+*.key
+*.pem
+*.p12
+*.jks
+
+# Large or sensitive assets that should not be committed here
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.sql
+*.db
+*.sqlite
+*.mp4
+*.mov
+*.avi
