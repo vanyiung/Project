@@ -16,7 +16,9 @@ Personal project achievements, architecture documentation, milestone records, an
 | 项目 | 类型 | 当前状态 | 入口 |
 | --- | --- | --- | --- |
 | QuantGuard 智衡量化交易与风控系统 | Spring Boot / Vue 3 / 模拟交易 | v1.0.0 已正式发布，前后端 CI 通过 | [projects/quantguard/PROJECT_OVERVIEW.md](projects/quantguard/PROJECT_OVERVIEW.md) |
-| 员工工时系统 | Spring Boot / REST API | 已有基础业务模块 | [projects/timesheet-system/PROJECT_OVERVIEW.md](projects/timesheet-system/PROJECT_OVERVIEW.md) |
+| 员工工时系统 | Spring Boot / Vue 3 / 工时审批 | 前后端功能原型已完成，前端构建通过 | [projects/timesheet-system/PROJECT_OVERVIEW.md](projects/timesheet-system/PROJECT_OVERVIEW.md) |
+| TypeWriter | AutoHotkey / Windows 桌面工具 | v1.0.0 源码与可执行程序已公开 | [projects/typewriter/PROJECT_OVERVIEW.md](projects/typewriter/PROJECT_OVERVIEW.md) |
+| KMNZ 资料站 | HTML / CSS / JavaScript | 多页面静态站点已完成，脚本与链接检查通过 | [projects/kmnz/PROJECT_OVERVIEW.md](projects/kmnz/PROJECT_OVERVIEW.md) |
 
 ### 如何查看项目
 
@@ -74,7 +76,9 @@ It is not a source-code mirror. It should not contain full source copies, databa
 | Project | Type | Status | Entry |
 | --- | --- | --- | --- |
 | QuantGuard | Spring Boot / Vue 3 / simulated trading | v1.0.0 released; backend and frontend CI passing | [projects/quantguard/PROJECT_OVERVIEW.md](projects/quantguard/PROJECT_OVERVIEW.md) |
-| Timesheet System | Spring Boot / REST API | Basic business modules recorded | [projects/timesheet-system/PROJECT_OVERVIEW.md](projects/timesheet-system/PROJECT_OVERVIEW.md) |
+| Timesheet System | Spring Boot / Vue 3 / approval workflow | Full-stack prototype completed; frontend build passing | [projects/timesheet-system/PROJECT_OVERVIEW.md](projects/timesheet-system/PROJECT_OVERVIEW.md) |
+| TypeWriter | AutoHotkey / Windows desktop utility | v1.0.0 source and executable published | [projects/typewriter/PROJECT_OVERVIEW.md](projects/typewriter/PROJECT_OVERVIEW.md) |
+| KMNZ Archive | HTML / CSS / JavaScript | Multi-page static site completed; scripts and links validated | [projects/kmnz/PROJECT_OVERVIEW.md](projects/kmnz/PROJECT_OVERVIEW.md) |
 
 ### How to Use
 
