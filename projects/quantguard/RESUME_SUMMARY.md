@@ -2,28 +2,28 @@
 
 ## 一句话版本
 
-开发本地量化交易辅助与风控后端，覆盖模拟账户、投资组合、订单、成交、资金流水和事务测试。
+基于 Spring Boot、Vue 3 和 MySQL 开发本地模拟交易与持仓分析系统，并完成前后端 CI 和浏览器自动化测试。
 
 ## 50 字版本
 
-基于 Java 21、Spring Boot、MySQL 和 MyBatis-Plus 开发本地模拟交易与风控后端，实现账户、组合、订单、成交、资金流水和事务一致性验证。
+使用 Java 21、Spring Boot、Vue 3、TypeScript 和 MySQL 构建模拟交易系统，实现历史 K 线、订单成交、持仓收益和回本计算。
 
 ## 100 字版本
 
-QuantGuard 是本地自用的量化交易辅助与风控系统。本人负责后端架构、数据库迁移、账户与组合、证券标的、持仓、风控、模拟订单、成交和资金流水模块，实现事务回滚、并发控制、单元测试、WebMvc 测试和 Testcontainers MySQL 集成测试。
+QuantGuard 是本地模拟交易与历史行情分析系统。项目采用 Spring Boot 与 Vue 3 monorepo，完成账户、组合、证券、K 线、订单、成交、持仓收益和回本计算，并通过 145 个后端测试、5 个 Playwright 浏览器测试及前后端 GitHub Actions 验证。
 
 ## 详细版本
 
-QuantGuard 是一个本地量化交易辅助与风控系统，第一版聚焦模拟交易而非真实下单。项目使用 Java 21、Spring Boot、MySQL、MyBatis-Plus 和 Maven，采用 Controller、Service、Mapper、Entity、DTO 分层结构。本人负责后端模块设计与实现，完成模拟账户、投资组合、证券标的、持仓、风控审核、模拟订单、模拟成交和资金流水。项目通过 Mockito、MockMvc 和 Testcontainers MySQL 验证核心业务规则、事务回滚和并发控制，并接入 GitHub Actions 远程 CI。
+QuantGuard 使用 Java 21、Spring Boot、MySQL、MyBatis-Plus、Vue 3、TypeScript、Pinia 和 ECharts 构建。后端采用 Controller、Service、Mapper、Entity、DTO 分层结构，处理模拟账户、订单、成交和持仓等业务；前端提供历史 K 线、模拟下单、收益展示和回本计算。项目针对资源生命周期设计停用、行情清空和安全硬删除，并使用 JUnit、MockMvc、Testcontainers 与 Playwright 覆盖后端事务和关键浏览器交互。`v1.0.0` 已通过前后端 GitHub Actions 并正式发布。
 
 ## 后端岗位版本
 
-独立设计并实现 Spring Boot 模拟交易风控后端，重点处理金额精度、事务边界、乐观锁、异常响应、数据库迁移和自动化测试，使用 Testcontainers 在真实 MySQL 容器中验证资金、订单、成交和流水的一致性。
+设计并实现 Spring Boot 模拟交易后端，重点处理金额精度、事务边界、并发更新、异常响应和资源生命周期，通过 JUnit、MockMvc 和 Testcontainers 验证核心业务一致性。
 
-## 研究生申请版本
+## 全栈岗位版本
 
-围绕量化交易辅助与风险控制场景，构建本地模拟交易后端系统，将投资组合、风控审核、订单状态流转、成交处理和资金流水抽象为可验证的软件模型，并通过自动化测试和集成 CI 验证系统一致性。
+使用 Spring Boot、Vue 3、TypeScript、Pinia、Element Plus 和 ECharts 完成模拟交易系统前后端开发，构建历史 K 线、订单成交、持仓收益和回本测算流程，并使用 Playwright 与 GitHub Actions 自动验证关键交互。
 
 ## 答辩介绍版本
 
-本项目是一个本地量化交易辅助与风控系统，目标不是自动赚钱或实盘交易，而是把策略分析、风险检查、模拟委托、模拟成交、账户更新和流水审计形成闭环。后端采用 Spring Boot 和 MySQL，实现了账户、组合、持仓、订单、成交和资金流水模块，并通过真实 MySQL 容器集成测试验证事务回滚和并发控制。
+本项目用于本地模拟交易和历史行情分析，不连接真实券商。系统从证券行情、模拟账户和投资组合出发，形成订单、成交、持仓和收益分析闭环，并针对交易事务、资源删除和图表交互建立自动化测试。首个正式版本已发布到 GitHub。

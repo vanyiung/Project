@@ -1,28 +1,26 @@
 # QuantGuard Assets
 
-## 可保存内容
+## 建议截图
 
-- 脱敏接口截图。
-- 后端架构图。
-- 交易流程图。
-- GitHub Actions 通过截图。
-- 前端完成后的脱敏页面截图。
-
-## 命名规则
-
-- `architecture-YYYYMMDD.png`
-- `api-health-YYYYMMDD.png`
-- `ci-success-YYYYMMDD.png`
-- `trade-flow-YYYYMMDD.png`
+- `market-center-light.png`：行情中心与 K 线；
+- `market-center-dark.png`：深色模式；
+- `simulated-orders.png`：模拟订单和成交；
+- `positions-and-profit.png`：持仓收益；
+- `recovery-calculator.png`：独立回本计算器；
+- `github-actions-v1.png`：v1.0.0 前后端 CI；
+- `github-release-v1.png`：v1.0.0 Release。
 
 ## 脱敏要求
 
-截图不得包含数据库密码、Token、Cookie、真实账号、真实交易数据或私人路径。
+- 不显示 Tushare Token；
+- 不显示密码、Cookie、私钥或本地绝对路径；
+- 模拟账户名称和持仓数据需确认适合公开；
+- 不把模拟数据描述成真实交易数据；
+- 截图不包含浏览器个人账号信息。
 
-## 文件大小
+## 文件规则
 
-单张图片建议不超过 2 MB，不保存大型视频或完整构建产物。
-
-## 版权要求
-
-优先使用自己制作的图和截图；第三方素材必须确认授权。
+- 使用 PNG 或经过压缩的 WebP；
+- 单张图片建议不超过 2 MB；
+- 不保存大型视频、数据库文件或构建产物；
+- 只使用自己制作或确认有权使用的内容。

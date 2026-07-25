@@ -15,10 +15,8 @@ Personal project achievements, architecture documentation, milestone records, an
 
 | 项目 | 类型 | 当前状态 | 入口 |
 | --- | --- | --- | --- |
-| QuantGuard 智衡量化交易与风控系统 | Java 后端 / 模拟交易 / 风控 | 后端 V5 事务闭环已验证，前端规划中 | [projects/quantguard/PROJECT_OVERVIEW.md](projects/quantguard/PROJECT_OVERVIEW.md) |
-| 端侧视觉辅助出行系统 | 嵌入式 AI / 计算机视觉 | 已有比赛成果，性能数据待核验 | [projects/visual-assistance-system/PROJECT_OVERVIEW.md](projects/visual-assistance-system/PROJECT_OVERVIEW.md) |
+| QuantGuard 智衡量化交易与风控系统 | Spring Boot / Vue 3 / 模拟交易 | v1.0.0 已正式发布，前后端 CI 通过 | [projects/quantguard/PROJECT_OVERVIEW.md](projects/quantguard/PROJECT_OVERVIEW.md) |
 | 员工工时系统 | Spring Boot / REST API | 已有基础业务模块 | [projects/timesheet-system/PROJECT_OVERVIEW.md](projects/timesheet-system/PROJECT_OVERVIEW.md) |
-| 员工离职预测系统 | 数据分析 / 机器学习 | 模块和指标待补充核验 | [projects/attrition-prediction-system/PROJECT_OVERVIEW.md](projects/attrition-prediction-system/PROJECT_OVERVIEW.md) |
 
 ### 如何查看项目
 
@@ -75,10 +73,8 @@ It is not a source-code mirror. It should not contain full source copies, databa
 
 | Project | Type | Status | Entry |
 | --- | --- | --- | --- |
-| QuantGuard | Java backend / simulated trading / risk control | Backend V5 transaction flow verified; frontend planned | [projects/quantguard/PROJECT_OVERVIEW.md](projects/quantguard/PROJECT_OVERVIEW.md) |
-| Visual Assistance System | Edge AI / computer vision | Competition achievement recorded; performance numbers need verification | [projects/visual-assistance-system/PROJECT_OVERVIEW.md](projects/visual-assistance-system/PROJECT_OVERVIEW.md) |
+| QuantGuard | Spring Boot / Vue 3 / simulated trading | v1.0.0 released; backend and frontend CI passing | [projects/quantguard/PROJECT_OVERVIEW.md](projects/quantguard/PROJECT_OVERVIEW.md) |
 | Timesheet System | Spring Boot / REST API | Basic business modules recorded | [projects/timesheet-system/PROJECT_OVERVIEW.md](projects/timesheet-system/PROJECT_OVERVIEW.md) |
-| Attrition Prediction System | Data analysis / machine learning | Modules and metrics need verification | [projects/attrition-prediction-system/PROJECT_OVERVIEW.md](projects/attrition-prediction-system/PROJECT_OVERVIEW.md) |
 
 ### How to Use
 

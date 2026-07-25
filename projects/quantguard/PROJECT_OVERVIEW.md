@@ -2,76 +2,100 @@
 
 ## 项目背景
 
-QuantGuard 是一个本地自用的量化交易辅助与风控系统，目标是帮助整理长期定投、短期交易、模拟账户、订单、成交和资金流水等业务流程。
+QuantGuard 是一个本地模拟交易、历史行情与持仓分析系统，用于管理模拟账户、投资组合、证券标的、订单、成交和持仓成本。
 
-## 解决的问题
-
-- 把交易建议、风控审核和模拟交易流程分开。
-- 避免策略直接修改账户或绕过风控。
-- 用自动化测试验证资金、订单、成交和流水的一致性。
+项目只处理本地模拟数据，不连接真实券商，不提交真实订单，也不执行真实交易。
 
 ## 当前状态
 
-后端已推进到 V5，完成模拟账户、投资组合、证券标的、持仓、风控、模拟订单、模拟成交、资金流水、事务和并发测试。前端规划中。
+- `v1.0.0` 已于 2026 年 7 月发布；
+- 前后端 monorepo 已完成；
+- 后端测试 145 个通过；
+- 前端 Playwright 浏览器测试 5 个通过；
+- Backend CI 与 Frontend CI 均通过；
+- GitHub Release 已发布。
 
 ## 技术栈
+
+### 后端
 
 - Java 21
 - Spring Boot
 - Maven
 - MySQL
 - MyBatis-Plus
-- Validation
-- Lombok
-- JUnit 5
-- Mockito
+- JUnit 5、Mockito、MockMvc
 - Testcontainers MySQL
+
+### 前端
+
+- Vue 3
+- TypeScript
+- Vite
+- Pinia
+- Axios
+- Element Plus
+- ECharts
+- Playwright
+
+### 工程
+
+- Git monorepo
 - GitHub Actions
+- Conventional Commits
+- GitHub Releases
 
 ## 主要功能
 
-- 模拟账户管理。
-- 长期和短期投资组合隔离。
-- 证券标的和只读持仓结构。
-- 风控规则检查。
-- 模拟订单创建。
-- 模拟成交执行。
-- 资金流水审计。
-- 事务回滚和并发控制测试。
+- 模拟账户及账户内投资组合管理；
+- 证券标的导入、停用、行情清理和安全删除；
+- Tushare Token 页面配置和历史日线同步；
+- 日 K、成交量、区间缩放和历史价格查看；
+- 模拟限价订单创建、执行、取消和成交记录；
+- 持仓数量、可用数量和平均成本维护；
+- 持仓收益金额、收益率和市值展示；
+- 持仓快捷回本测算和独立回本计算器；
+- 响应式布局、可收起侧边栏及浅色/深色模式。
 
 ## 个人负责内容
 
-- 后端架构设计与模块拆分。
-- 数据库迁移脚本设计。
-- Controller、Service、Mapper、Entity、DTO 分层实现。
-- 风控、订单、成交、资金流水核心流程实现。
-- 单元测试、WebMvc 测试、Testcontainers 集成测试和 GitHub Actions 配置。
+- 前后端架构设计和 monorepo 迁移；
+- 数据库结构、后端分层和事务流程实现；
+- Vue 3 前端页面、状态管理和接口联调；
+- K 线交互、持仓收益和回本计算实现；
+- 资源停用、清空和硬删除规则设计；
+- 单元测试、接口测试、浏览器自动化测试和 GitHub Actions；
+- 版本收口、敏感信息检查和 GitHub Release 发布。
 
 ## 技术难点
 
-- 现金冻结、订单、成交和流水需要保持同一事务内一致。
-- 同一订单并发执行或取消时，需要避免重复成交或状态错乱。
-- 长期投资和短期交易必须在账户、组合和策略层面保持边界。
+- 在订单执行、取消、成交和持仓变化之间保持事务一致性；
+- 区分停用、清空派生行情和永久删除，避免破坏交易数据引用；
+- 让 K 线缩放后的最高价、最低价和右侧收盘价随可视范围更新；
+- 在账户、投资组合和证券删除后清理前端本地选择状态；
+- 使用浏览器自动化覆盖图表交互、硬删除和回本计算。
 
-## 测试情况
+## 测试与验证
 
-- 普通后端测试已通过。
-- GitHub Actions 后端 CI 已启用。
-- Testcontainers MySQL 集成测试已在 GitHub Ubuntu Runner 上通过。
-- V5 集成测试：6 个，Failures 0，Errors 0，Skipped 0。
+- 后端：145 个测试通过，Failures 0，Errors 0；
+- 前端：format、type-check、lint 和 production build 通过；
+- 浏览器：5 个 Playwright 测试通过；
+- GitHub：前后端 Actions 均通过；
+- 版本：`v1.0.0` 指向提交 `f4fa8966ac63a6dadbce2cac31dba21f01fb86a6`。
 
 ## 已知限制
 
-- 当前仍是本地模拟交易系统。
-- 不接入真实券商。
-- 不接入实时行情。
-- 不执行真实自动下单。
-- 前端尚未开始。
+- 不接入真实券商或真实交易账户；
+- 不提供实时行情；
+- 当前只面向本地单用户模拟场景；
+- 仍需分别运行前端、后端并配置本地数据库；
+- 桌面客户端尚未开发。
 
-## 源码地址
+## 项目入口
 
-https://github.com/vanyiung/QuantGuard
+- [源码仓库](https://github.com/vanyiung/QuantGuard)
+- [v1.0.0 Release](https://github.com/vanyiung/QuantGuard/releases/tag/v1.0.0)
 
 ## 演示地址
 
-待补充。
+当前没有公网演示地址。
